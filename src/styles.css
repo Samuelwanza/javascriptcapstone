@@ -31,8 +31,10 @@ body{
 
 footer {
   color: aliceblue;
+  text-align: center;
 }
 
 footer a {
   color: aliceblue;
+  text-decoration: none;
 }
