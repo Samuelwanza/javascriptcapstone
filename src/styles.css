@@ -28,3 +28,11 @@ body{
 .nav-items li {
   padding: 0 20px;
 }
+
+footer {
+  color: aliceblue;
+}
+
+footer a {
+  color: aliceblue;
+}
