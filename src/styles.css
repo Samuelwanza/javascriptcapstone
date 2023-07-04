@@ -3,3 +3,28 @@
 * {
   font-family: 'Nunito', sans-serif;
 }
+
+body{
+  background-color: rgb(20, 15, 42);
+}
+
+.nav{
+  margin: 0;
+  padding: 10px;
+  color: azure;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(16, 12, 33);
+}
+.nav li {
+  list-style-type: none;
+}
+
+.nav-items{
+  display: flex;
+  padding-bottom: 8px;
+}
+
+.nav-items li {
+  padding: 0 20px;
+}
