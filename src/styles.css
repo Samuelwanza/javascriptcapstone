@@ -4,11 +4,11 @@
   font-family: 'Nunito', sans-serif;
 }
 
-body{
+body {
   background-color: rgb(20, 15, 42);
 }
 
-.nav{
+.nav {
   margin: 0;
   padding: 10px;
   color: azure;
@@ -16,11 +16,12 @@ body{
   justify-content: space-around;
   background-color: rgb(16, 12, 33);
 }
+
 .nav li {
   list-style-type: none;
 }
 
-.nav-items{
+.nav-items {
   display: flex;
   padding-bottom: 8px;
 }
