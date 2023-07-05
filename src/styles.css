@@ -59,14 +59,16 @@ main {
   justify-content: space-between;
   align-items: center;
   margin: 0;
-  top: -30px;
+  top: -76px;
   color: #fff;
   text-align: center;
   padding: 10px;
+  background: linear-gradient(
+    to top,
+    black, 
+    #000000c4,
+    transparent
+  );
 }
 
-.heart-icon {
-  width: 30px;
-  height: 30px;
-  background-color: #fff;
-}
+

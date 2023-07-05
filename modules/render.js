@@ -1,4 +1,3 @@
-import heart from '../images/heart-svgrepo-com.svg';
 import fetchAPI from './fetchAPI';
 
 const showRender = async () => {
@@ -10,12 +9,18 @@ const showRender = async () => {
   for (let i = 10; i < 25; i += 1) {
     const movie = movies[i];
     placeholder += `
-        <div class="grid-item"><img src="${movie.image.medium}" alt="${movie.name}"/>
-        <div class="title">
-        <p>${movie.name}</p>
-        <img class="heart-icon" src="${heart}" alt="heart">
+        <div class="grid-item">
+            <img src="${movie.image.medium}" alt="${movie.name}"/>
+            <div class="title">
+                <p>${movie.name}</p>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="btns">
+            <button>Comment</button>
+            <button>Reservation</button>
+            </div>
         </div>
-        </div>
+        
     `;
   }
 
