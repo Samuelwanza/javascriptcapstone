@@ -50,6 +50,7 @@ main {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 20px;
   margin-left: 35px;
+  margin-top: 30px;
 }
 
 .title {
