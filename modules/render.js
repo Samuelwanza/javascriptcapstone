@@ -1,3 +1,4 @@
+
 import fetchAPI from './fetchAPI';
 
 const showRender = async () => {
@@ -6,11 +7,13 @@ const showRender = async () => {
 
   let placeholder = '';
 
-  for (let i = 10; i < 25; i++) {
+  for (let i = 10; i < 25; i += 1) {
     const movie = movies[i];
-    console.log(movie.image.medium);
+    console.log(movie);
     placeholder += `
-        <img src="${movie.image.medium}" alt="${movie.name}"/>
+        <div class="grid-item"><img src="${movie.image.medium}" alt="${movie.name}"/>
+        <p class="title">${movie.name}</p>
+        </div>
     `;
   }
 
