@@ -13,14 +13,16 @@ const showRender = async () => {
             <img src="${movie.image.medium}" alt="${movie.name}"/>
             <div class="title">
                 <p>${movie.name}</p>
+                <div>
+                <span class="count">33</span>
                 <i class="fa-regular fa-heart"></i>
+                </div>
             </div>
             <div class="btns">
             <button class="comment-btn btn">Comment</button>
             <button class="reserve-btn btn">Reservation</button>
             </div>
-        </div>
-        
+        </div> 
     `;
   }
 
