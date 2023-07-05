@@ -52,12 +52,11 @@ main {
   margin-left: 35px;
 }
 
-p.title {
+.title {
   position: relative;
   margin: 0;
   top: -30px;
   color: #fff;
   text-align: center;
-  background-color: #000000b8;
   padding: 10px;
 }

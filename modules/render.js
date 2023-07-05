@@ -1,5 +1,7 @@
 
+import heart from '../images/heart-svgrepo-com.svg';
 import fetchAPI from './fetchAPI';
+
 
 const showRender = async () => {
   const movies = await fetchAPI('https://api.tvmaze.com/shows');
@@ -12,7 +14,10 @@ const showRender = async () => {
     console.log(movie);
     placeholder += `
         <div class="grid-item"><img src="${movie.image.medium}" alt="${movie.name}"/>
-        <p class="title">${movie.name}</p>
+        <div class="title">
+        <p>${movie.name}</p>
+        <img class="heart-icon" src="${heart}" alt="heart">
+        </div>
         </div>
     `;
   }
