@@ -6,7 +6,7 @@ const showRender = async () => {
 
   let placeholder = '';
 
-  for (let i = 10; i < 25; i += 1) {
+  for (let i = 0; i < 15; i += 1) {
     const movie = movies[i];
     placeholder += `
         <div class="grid-item">
@@ -16,8 +16,8 @@ const showRender = async () => {
                 <i class="fa-regular fa-heart"></i>
             </div>
             <div class="btns">
-            <button>Comment</button>
-            <button>Reservation</button>
+            <button class="comment-btn btn">Comment</button>
+            <button class="reserve-btn btn">Reservation</button>
             </div>
         </div>
         
