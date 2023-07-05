@@ -39,3 +39,14 @@ footer a {
   color: aliceblue;
   text-decoration: none;
 }
+
+main {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.shows {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 14px;
+}
