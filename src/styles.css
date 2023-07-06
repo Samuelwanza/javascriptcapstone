@@ -93,3 +93,89 @@ main {
 i.fa-regular.fa-heart {
   cursor: pointer;
 }
+
+.pop-up-container {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 9999;
+  opacity: 0.1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(20, 15, 42);
+  padding-top: 5vh;
+  padding-bottom: 5vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  width: 100vw;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 9999;
+  overflow-y: auto;
+  max-height: 100vh;
+  color: white;
+}
+
+.hide {
+  display: none;
+}
+
+.wrapper {
+  margin-right: 20vw;
+  padding-bottom: 10vh;
+  position: relative;
+}
+
+.wrapper > img {
+  width: 80vw;
+  height: 70vh;
+  border-radius: 20px;
+  position: relative;
+}
+
+.divider {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+.popupimage {
+  position: absolute;
+  top: 0;
+  right: 10%;
+}
+
+.cross-container {
+  position: absolute;
+  top: 10px;
+  right: -40px;
+  transform: rotate(45deg);
+}
+
+.vertical-line,
+.horizontal-line {
+  position: absolute;
+  background-color: white;
+  width: 5px;
+  height: 20px;
+  top: 50%;
+  left: 50%;
+  transform-origin: center center;
+}
+
+.vertical-line {
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.horizontal-line {
+  transform: translateX(-50%) translateY(-50%) rotate(90deg);
+}
