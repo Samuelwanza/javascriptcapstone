@@ -10,7 +10,7 @@ const postAPI = (url, id) => {
       },
     });
   } catch (error) {
-    console.log('Error', error);
+    console.error('Error posting like', error);
   }
 };
 
