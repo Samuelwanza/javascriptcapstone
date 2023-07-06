@@ -18,7 +18,7 @@ const showRender = async () => {
           <p>${movie.name}</p>
           <div>
             <span class="count">33</span>
-            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-heart like"></i>
           </div>
         </div>
         <div class="btns">
@@ -27,7 +27,7 @@ const showRender = async () => {
         </div>
         <div class="popup hide">
           <div class="wrapper">
-            <img src="${movie.image.medium}" alt="${movie.name}"/>
+            <img src="${movie.image.original}" alt="${movie.name}"/>
             <div class="cross-container">
               <div class="vertical-line"></div>
               <div class="horizontal-line"></div>
