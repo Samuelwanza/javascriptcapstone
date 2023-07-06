@@ -1,22 +1,25 @@
 import fetchAPI from './fetchAPI';
+import addLikes from './addLikes';
+import popUp from './popUp';
 
 const showRender = async () => {
   const movies = await fetchAPI('https://api.tvmaze.com/shows');
+  const likes = await fetchAPI('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/PVsyyzJcjAI3kwRWNz7v/likes');
   const container = document.querySelector('.shows');
 
   let placeholder = '';
-
   for (let i = 0; i < 15; i += 1) {
     const movie = movies[i];
+    const like = likes[i];
     const [...genre] = movie.genres;
     placeholder += `
-      <div class="grid-item">
+      <div class="grid-item" >
         <img src="${movie.image.medium}" alt="${movie.name}"/>
         <div class="title">
           <p>${movie.name}</p>
           <div>
-            <span class="count">33</span>
-            <i class="fa-regular fa-heart"></i>
+            <span>${parseInt(like.likes, 10)}</span>
+            <i class="fa-regular fa-heart like" data-id="${movie.id}"></i>
           </div>
         </div>
         <div class="btns">
@@ -25,13 +28,11 @@ const showRender = async () => {
         </div>
         <div class="popup hide">
           <div class="wrapper">
-            <img src="${movie.image.medium}" alt="${movie.name}"/>
+            <img src="${movie.image.original}" alt="${movie.name}"/>
             <div class="cross-container">
               <div class="vertical-line"></div>
               <div class="horizontal-line"></div>
             </div>
-
-
             <h2>${movie.name}</h2>
             <div class="divider">
               <p>genres:  ${genre}<p>
@@ -52,21 +53,8 @@ const showRender = async () => {
   }
 
   container.innerHTML = placeholder;
-
-  const commentButtons = document.querySelectorAll('.comment-btn');
-  commentButtons.forEach((button) => {
-    button.addEventListener('click', (event) => {
-      const popup = event.target.parentNode.parentNode.querySelector('.popup');
-      popup.classList.toggle('hide');
-    });
-  });
-  const crossx = document.querySelectorAll('.cross-container');
-  crossx.forEach((cross) => {
-    cross.addEventListener('click', (event) => {
-      const popup = event.currentTarget.closest('.popup');
-      popup.classList.toggle('hide');
-    });
-  });
+  addLikes();
+  popUp();
 };
 
 export default showRender;
