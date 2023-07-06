@@ -18,7 +18,7 @@ const showRender = async () => {
         <div class="title">
           <p>${movie.name}</p>
           <div>
-            <span class="count">${parseInt(like.likes, 10)}</span>
+            <span>${parseInt(like.likes, 10)}</span>
             <i class="fa-regular fa-heart like" data-id="${movie.id}"></i>
           </div>
         </div>
