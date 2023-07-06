@@ -1,5 +1,4 @@
 import postApi from './postAPI';
-import showLikes from './showLikes';
 
 const addLikes = () => {
   document.querySelectorAll('.like').forEach((element) => {
@@ -9,7 +8,6 @@ const addLikes = () => {
       const html = element.previousSibling.previousSibling.innerHTML;
       element.previousSibling.previousSibling.innerHTML = parseInt(html, 10) + 1;
       postApi(url, parseInt(id, 10));
-      showLikes();
     });
   });
 };
