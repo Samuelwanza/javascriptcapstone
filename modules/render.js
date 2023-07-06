@@ -32,8 +32,6 @@ const showRender = async () => {
               <div class="vertical-line"></div>
               <div class="horizontal-line"></div>
             </div>
-
-
             <h2>${movie.name}</h2>
             <div class="divider">
               <p>genres:  ${genre}<p>
@@ -70,7 +68,6 @@ const showRender = async () => {
       popup.classList.toggle('hide');
     });
   });
-
 };
 
 export default showRender;
