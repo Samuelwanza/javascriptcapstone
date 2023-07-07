@@ -196,11 +196,10 @@ ul {
   height: 50px;
 }
 
-input,
-button {
+input {
   padding: 5px;
   border-radius: 5px;
-  outline: none;
+  border: none;
   width: 400px;
 }
 
