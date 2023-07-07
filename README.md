@@ -13,6 +13,7 @@
   - [Prerequisites](#prerequisites)
   - [Usage](#usage)
   - [Run tests](#run-tests)
+  - [Demo](#video demo)
   - [Deployment](#deployment)
 - [👥 Authors](#authors)
 - [👥 Collaborator](#collaborator)
@@ -94,6 +95,12 @@ To execute the tests for this project, follow these steps:
 By following these steps, you can effectively run and validate the tests for the project using Live Server in VSCode.
 
 ### Deployment:
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Demo:
+
+[Video link](https://drive.google.com/file/d/1C2q5sc54Fg1j6hElIBBXmDBX5fBXdqaB/view?usp=sharing)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
