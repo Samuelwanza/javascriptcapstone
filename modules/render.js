@@ -3,6 +3,7 @@ import addLikes from './addLikes';
 import popUp from './popUp';
 import loadcomments from './loadComments';
 import addComments from './addComments';
+import showLikes from './showLikes';
 
 const showRender = async () => {
   const movies = await fetchAPI('https://api.tvmaze.com/shows');
@@ -11,6 +12,7 @@ const showRender = async () => {
   );
 
   const container = document.querySelector('.shows');
+  const showCount = document.querySelector('.count');
 
   // const comments = await getComments(2);
 
@@ -64,11 +66,8 @@ const showRender = async () => {
             <div class="comment-input">
               <input type="text" placeholder="Your name" class="user" />
               <input type="text" placeholder="Your insights" class="usercomment" />
-              <button class="submit-button">comment</button>
-            
-            </div>
-            
-            
+              <button class="submit-button btn">Comment</button>
+            </div>  
           </div>
         
         </div>
@@ -81,6 +80,8 @@ const showRender = async () => {
   popUp();
   loadcomments();
   addComments();
+  const count = await showLikes();
+  showCount.innerHTML = `${count.length} Shows`;
 };
 
 export default showRender;
