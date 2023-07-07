@@ -4,28 +4,28 @@
 
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Demo](#video demo)
-  - [Deployment](#deployment)
-- [👥 Authors](#authors)
-- [👥 Collaborator](#collaborator)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [📝 License](#license)
+- [Javascript-Capstone-Group-Project](#javascript-capstone-group-project)
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 \[Javascript-Capstone-Group-Project\] ](#-javascript-capstone-group-project-)
+  - [Tech Stack ](#tech-stack-)
+  - [Key Features ](#key-features-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Usage:](#usage)
+    - [Run tests:](#run-tests)
+    - [Deployment:](#deployment)
+    - [Demo](#video demo)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 
 # 📖 [Javascript-Capstone-Group-Project] <a name="about-project"></a>
 
-**[Javascript-Capstone-Group-Project]** is a project that aims to implement the full features of javascript in a single project.
+**[Javascript-Capstone-Group-Project]** is a project that aims to implement the full features of javascript in a single project. We created this project using some JavaScript features like webpack, ES6 features, and Jest testing framework. We consume tvmaze and other APIs using JavaScript async and await and some styling.
 
 <br>
 
@@ -38,14 +38,18 @@
     <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
     <li><a href="https://www.testim.io/blog/what-is-a-linter-heres-a-definition-and-quick-start-guide/">Linters</a></li>
     <li><a href="https://developer.mozilla.org/en-US/docs/Web/javascript/">Javascript</a></li>
+     <li><a href="https://webpack.js.org/guides/getting-started/">Webpack</a></li>
   </ul>
 </details>
 
 ### Key Features <a name="key-features"></a>
 
-- **[CSS]**
-- **[JavaScript]**
-- **[Linters]**
+- **CSS**
+- **JavaScript**
+- **Linters**
+- **Using API**
+- **Like Funtionality**
+- **Comment Funtionality**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -111,6 +115,12 @@ By following these steps, you can effectively run and validate the tests for the
 - GitHub: [@githubhandle](https://github.com/Samuelwanza/)
 - Twitter: [@twitterhandle](https://twitter.com/samuelmunguti9/)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/samuel-munguti-8a257a1bb/)
+
+**Cephas Tokoli**
+
+- GitHub: [@Ctokoli](https://github.com/ctokoli/)
+- Twitter: [@Ctokoli](https://twitter.com/ctokoli)
+- LinkedIn: [Cephas Tokoli](https://www.linkedin.com/in/cephas-tokoli-a25204123/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
