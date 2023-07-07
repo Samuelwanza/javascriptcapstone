@@ -208,3 +208,8 @@ button {
   border: none;
   cursor: pointer;
 }
+
+button.submit-button.btn {
+  width: 408px;
+  font-size: 16px;
+}
