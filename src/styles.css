@@ -179,3 +179,33 @@ i.fa-regular.fa-heart {
 .horizontal-line {
   transform: translateX(-50%) translateY(-50%) rotate(90deg);
 }
+
+ul {
+  padding-inline-start: 0;
+}
+
+.comment-input {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  row-gap: 20px;
+  justify-content: flex-start;
+}
+
+.usercomment {
+  height: 50px;
+}
+
+input,
+button {
+  padding: 5px;
+  border-radius: 5px;
+  outline: none;
+  width: 400px;
+}
+
+button {
+  background-color: #f15967;
+  border: none;
+  cursor: pointer;
+}
