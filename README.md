@@ -7,14 +7,15 @@
 - [Javascript-Capstone-Group-Project](#javascript-capstone-group-project)
 - [📗 Table of Contents](#-table-of-contents)
 - [📖 \[Javascript-Capstone-Group-Project\] ](#-javascript-capstone-group-project-)
-    - [Tech Stack ](#tech-stack-)
-    - [Key Features ](#key-features-)
+  - [Tech Stack ](#tech-stack-)
+  - [Key Features ](#key-features-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
     - [Usage:](#usage)
     - [Run tests:](#run-tests)
     - [Deployment:](#deployment)
+    - [Demo](#video demo)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
@@ -24,7 +25,7 @@
 
 # 📖 [Javascript-Capstone-Group-Project] <a name="about-project"></a>
 
-**[Javascript-Capstone-Group-Project]** is a project that aims to implement the full features of javascript in a single project. We created this project using some JavaScript features like webpack, ES6 features, and Jest testing framework. We consume tvmaze and other APIs using JavaScript async and await and some styling.  
+**[Javascript-Capstone-Group-Project]** is a project that aims to implement the full features of javascript in a single project. We created this project using some JavaScript features like webpack, ES6 features, and Jest testing framework. We consume tvmaze and other APIs using JavaScript async and await and some styling.
 
 <br>
 
@@ -101,16 +102,19 @@ By following these steps, you can effectively run and validate the tests for the
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+### Demo:
+
+[Video link](https://drive.google.com/file/d/1C2q5sc54Fg1j6hElIBBXmDBX5fBXdqaB/view?usp=sharing)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## 👥 Authors <a name="authors"></a>
 
 **Samuel Wanza**
 
-
 - GitHub: [@githubhandle](https://github.com/Samuelwanza/)
 - Twitter: [@twitterhandle](https://twitter.com/samuelmunguti9/)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/samuel-munguti-8a257a1bb/)
-
-
 
 **Cephas Tokoli**
 
