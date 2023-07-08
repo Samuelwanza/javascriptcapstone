@@ -13,10 +13,6 @@ const showRender = async () => {
   const container = document.querySelector('.shows');
   const showCount = document.querySelector('.count');
 
-  // const comments = await getComments(2);
-
-  // console.log(comments);
-
   let placeholder = '';
   for (let i = 0; i < 15; i += 1) {
     const movie = movies[i];
