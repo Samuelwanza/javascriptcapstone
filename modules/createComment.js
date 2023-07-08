@@ -1,7 +1,7 @@
-import appurl from './appData';
+import { COMMENTS_API } from '../config';
 
 const createComment = async (id, username, comment) => {
-  const commentCreation = await fetch(`${appurl}/comments`, {
+  const commentCreation = await fetch(`${COMMENTS_API}/comments`, {
     method: 'POST',
     headers: {
       'Content-type': 'application/json; charset=UTF-8',

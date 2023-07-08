@@ -1,8 +1,8 @@
-import appurl from './appData';
+import { COMMENTS_API } from '../config';
 
 const getComments = async (id) => {
   try {
-    const getAllComments = await fetch(`${appurl}/comments?item_id=${id}`, {
+    const getAllComments = await fetch(`${COMMENTS_API}/comments?item_id=${id}`, {
       method: 'GET',
       headers: {
         'Content-type': 'application/json; charset=UTF-8',

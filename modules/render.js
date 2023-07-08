@@ -4,12 +4,11 @@ import popUp from './popUp';
 import loadcomments from './loadComments';
 import addComments from './addComments';
 import showLikes from './showLikes';
+import { MOVIES_API, LIKES_API } from '../config';
 
 const showRender = async () => {
-  const movies = await fetchAPI(process.env.MOVIE_API);
-  const likes = await fetchAPI(
-    'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/PVsyyzJcjAI3kwRWNz7v/likes',
-  );
+  const movies = await fetchAPI(MOVIES_API);
+  const likes = await fetchAPI(LIKES_API);
 
   const container = document.querySelector('.shows');
   const showCount = document.querySelector('.count');

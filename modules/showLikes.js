@@ -1,7 +1,8 @@
 import fetchAPI from './fetchAPI';
+import { LIKES_API } from '../config';
 
 const showLikes = async () => {
-  const likes = await fetchAPI('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/PVsyyzJcjAI3kwRWNz7v/likes');
+  const likes = await fetchAPI(LIKES_API);
   return likes;
 };
 

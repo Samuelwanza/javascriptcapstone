@@ -1,14 +1,14 @@
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  mode: "development",
-  entry: "./src/index.js",
+  mode: 'development',
+  entry: './src/index.js',
   devServer: {
     static: {
-      directory: path.resolve(__dirname, "dist"),
+      directory: path.resolve(__dirname, 'dist'),
     },
-    watchFiles: ["src/*.html"],
+    watchFiles: ['src/*.html'],
     port: 3000,
     open: true,
     hot: true,
@@ -17,29 +17,29 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Output Management",
-      template: "./src/index.html",
+      title: 'Output Management',
+      template: './src/index.html',
     }),
   ],
   output: {
-    filename: "[name].bundle.js",
-    path: path.resolve(__dirname, "dist"),
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
   module: {
     rules: [
       {
         test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
+        use: ['style-loader', 'css-loader'],
       },
 
       {
         test: /\.(?:js|mjs|cjs)$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader",
+          loader: 'babel-loader',
           options: {
-            presets: [["@babel/preset-env", { targets: "defaults" }]],
+            presets: [['@babel/preset-env', { targets: 'defaults' }]],
           },
         },
       },
@@ -47,11 +47,11 @@ module.exports = {
         test: /\.(png|jpe?g|gif)$/i,
         use: [
           {
-            loader: "file-loader",
+            loader: 'file-loader',
             options: {
-              name: "[name].[ext]",
-              outputPath: "images/",
-              publicPath: "images/",
+              name: '[name].[ext]',
+              outputPath: 'images/',
+              publicPath: 'images/',
             },
           },
         ],
@@ -60,7 +60,7 @@ module.exports = {
         test: /\.svg$/,
         use: [
           {
-            loader: "svg-url-loader",
+            loader: 'svg-url-loader',
             options: {
               limit: 10000,
             },
@@ -70,9 +70,9 @@ module.exports = {
     ],
   },
   optimization: {
-    runtimeChunk: "single",
+    runtimeChunk: 'single',
   },
   resolve: {
-    extensions: [".js", ".svg"],
+    extensions: ['.js', '.svg'],
   },
 };
