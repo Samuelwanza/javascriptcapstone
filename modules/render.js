@@ -6,7 +6,7 @@ import addComments from './addComments';
 import showLikes from './showLikes';
 
 const showRender = async () => {
-  const movies = await fetchAPI('https://api.tvmaze.com/shows');
+  const movies = await fetchAPI(process.env.MOVIE_API);
   const likes = await fetchAPI(
     'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/PVsyyzJcjAI3kwRWNz7v/likes',
   );
